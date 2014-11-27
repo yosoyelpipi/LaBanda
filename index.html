@@ -1,0 +1,208 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Botonera los pibes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/img.css" />
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/img.js"></script>
+	<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/mipropiojava.js"></script>
+
+	<script>
+			$( document ).on( "pagecreate", function() {
+		    $( ".photopopup" ).on({
+		        popupbeforeposition: function() {
+		            var maxHeight = $( window ).height() - 60 + "px";
+		            $( ".photopopup img" ).css( "max-height", maxHeight );
+		        }
+		    });
+		});
+	</script>
+</head>
+
+<body>
+
+
+		<!-- Inicio primera página -->
+		<div data-role="page" id="foo" data-theme="a">
+
+			<div data-role="header">
+				<div data-role="navbar">
+		            <ul>
+		                <li><a href="#img" data-icon="grid">Img</a></li>
+		                <li><a href="#audio" data-icon="audio">Audio</a></li>
+		                <li><a href="#labanda" data-icon="user">La banda</a></li>
+		                <li><a href="#" data-icon="video">Videos</a></li>
+		            </ul>
+        		</div><!-- /navbar -->
+			</div><!-- /header -->
+
+			<div role="main" class="ui-content">
+				<ul data-role="listview" data-inset="true">
+				    <li><a href="#img">Im&aacute;genes</a></li>
+				    <li><a href="#audio">Audio</a></li>
+				    <li><a href="#labanda">La banda</a></li>
+				    <li><a href="#">Videos</a></li>
+				</ul>
+			  
+			<div id="resultado">
+				<p>Probando Java</p>
+	        </div>
+			
+
+				<i>*Todos los derechos reservados. Laboratorio de bytes 2014 es propiedad de Leonardo Condori.</i>
+			</div><!-- /content -->
+
+			<div data-role="footer" data-position="fixed" align="center">
+				<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user"><h4>Leo Condori</h4></button>
+			</div><!-- /footer -->
+		</div><!-- /Fin primera página -->
+
+
+		<!-- Inicio de segunda página -->
+		<div data-role="page" id="img" data-theme="a">
+
+			<div data-role="header">
+				<div data-role="navbar">
+		            <ul>
+		                <li><a class="ui-btn-active" href="#img" data-icon="grid">Img</a></li>
+		                <li><a href="#audio" data-icon="audio">Audio</a></li>
+		                <li><a href="#labanda" data-icon="user">La banda</a></li>
+		                <li><a href="#" data-icon="video">Videos</a></li>
+		            </ul>
+        		</div><!-- /navbar -->
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">atr&aacute;s</a>
+			</div><!-- /header -->
+
+			<div role="main" class="ui-content">
+				
+				<img src="img/l000.jpg" width="100%">
+				<img src="img/l001.jpg" width="100%">
+				<img src="img/l002.jpg" width="100%">
+				<img src="img/l003.jpg" width="100%">
+				<img src="img/l004.jpg" width="100%">
+				<img src="img/l005.jpg" width="100%">
+				<img src="img/l006.jpg" width="100%">
+				<img src="img/l007.jpg" width="100%">
+				<img src="img/l008.jpg" width="100%">
+				<img src="img/l009.jpg" width="100%">
+				<img src="img/l010.jpg" width="100%">
+				<img src="img/l011.jpg" width="100%">
+				<img src="img/l012.jpg" width="100%">
+				<img src="img/l013.jpg" width="100%">
+				<img src="img/l014.jpg" width="100%">
+				<img src="img/l015.jpg" width="100%">
+				<img src="img/l016.jpg" width="100%">
+				<img src="img/l017.jpg" width="100%">
+				<img src="img/l018.jpg" width="100%">
+				<img src="img/l019.jpg" width="100%">
+				<img src="img/l020.jpg" width="100%">
+
+				<img src="img/p000.jpg" width="100%">
+				<img src="img/p001.jpg" width="100%">
+				<img src="img/p002.jpg" width="100%">
+				<img src="img/p003.jpg" width="100%">
+				<img src="img/p004.jpg" width="100%">
+				<img src="img/p005.jpg" width="100%">
+				<img src="img/p006.jpg" width="100%">
+				<img src="img/p007.jpg" width="100%">
+				<img src="img/p008.jpg" width="100%">
+
+				<p>Y pronto habr&aacute; m&aacute;s...</p>
+
+				<p>Fotos de la despedida de JJ a la hora del almuerzo</p>
+
+			</div><!-- /content -->
+
+
+			<div data-role="footer" data-position="fixed" align="center">
+				<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user"><h4>Leo Condori</h4></button>
+			</div><!-- /footer -->
+		</div><!-- /Fin segunda página -->
+
+
+
+		<!-- Start 3 -->
+		<div data-role="page" id="audio" data-theme="a">
+
+			<div data-role="header">
+				<div data-role="navbar">
+					<ul>
+		                <li><a href="#img" data-icon="grid">Img</a></li>
+		                <li><a class="ui-btn-active" href="#audio" data-icon="audio">Audio</a></li>
+		                <li><a href="#labanda" data-icon="user">La banda</a></li>
+		                <li><a href="#" data-icon="video">Videos</a></li>
+        			</ul>
+        		</div><!-- /navbar -->
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">atr&aacute;s</a>
+			</div><!-- /header -->
+
+			<div role="main" class="ui-content">
+				<fieldset class="ui-grid-b">
+    				<div class="ui-block-a"><a class="ui-btn" href="#" onclick="playAudio('http://www.leocondori.com.ar/labanda/audio/amigozarpado.aac');">Lea</a></div>
+				    <div class="ui-block-b"><a class="ui-btn" href="#" onclick="playAudio('http://www.leocondori.com.ar/labanda/audio/cerraelorto.aac');">Leo</a></div>
+				    <div class="ui-block-c"><a class="ui-btn" href="#" onclick="playAudio('http://www.leocondori.com.ar/labanda/audio/queleandapasando.aac');">Leo</a></div>
+				</fieldset>
+
+				<fieldset class="ui-grid-b">
+				    <div class="ui-block-a"><a class="ui-btn" href="#" onclick="playAudio('http://www.leocondori.com.ar/labanda/audio/ritmo.aac');">Ritmo</a></div>
+				    <div class="ui-block-b"><a class="ui-btn" href="#" onclick="playAudio('http://www.leocondori.com.ar/labanda/audio/seguimirandoeltelefono.aac');">Segui</a></div>
+				</fieldset>
+
+				<p>Pr&oacute;ximamente m&aacute;s audios...</p>
+
+		        <p id="audio_position"></p>
+
+			</div><!-- /content -->
+
+			<div data-role="footer" data-position="fixed" align="center">
+				<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user"><h4>Leo Condori</h4></button>
+			</div><!-- /footer -->
+		</div><!-- /page 3 -->
+
+
+		<!-- Start 4 -->
+		<div data-role="page" id="labanda" data-theme="a">
+
+			<div data-role="header">
+				<div data-role="navbar">
+					<ul>
+		                <li><a href="#img" data-icon="grid">Img</a></li>
+		                <li><a href="#audio" data-icon="audio">Audio</a></li>
+		                <li><a class="ui-btn-active" href="#" data-icon="user">La banda</a></li>
+		                <li><a href="#" data-icon="video">Videos</a></li>
+        			</ul>
+        		</div><!-- /navbar -->
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">atr&aacute;s</a>
+			</div><!-- /header -->
+
+			<div role="main" class="ui-content">
+				<img src="img/bandaem.jpg" width="100%">
+				<p>Emiliano Medina</p>
+				<img src="img/bandajs.jpg" width="100%">
+				<p>Jonatan Schimdt</p>
+				<img src="img/bandalg.jpg" width="100%">
+				<p>Leandro Gattuso</p>
+				<img src="img/bandalc.jpg" width="100%">
+				<p>Leo Condori</p>
+				<img src="img/bandanb.jpg" width="100%">
+				<p>Nicol&aacute;s Belgrano</p>
+				<img src="img/bandarf.jpg" width="100%">
+				<p>Rodrigo Fernandez</p>
+
+				<p>Pr&oacute;ximamente m&aacute;s fotos de la banda...</p>				
+
+			</div><!-- /content -->
+
+			<div data-role="footer" data-position="fixed" align="center">
+				<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user"><h4>Leo Condori</h4></button>
+			</div><!-- /footer -->
+		</div><!-- /page 3 -->
+
+
+</body>
+</html>
